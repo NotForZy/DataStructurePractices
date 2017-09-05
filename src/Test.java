@@ -20,12 +20,13 @@ public class Test {
         int rawArray[] = {3, 2, 1, 7, 8, 4, 10, 16, 12};
         // int rawArray[] = {3, 6};
 
-
+        /*
         System.out.println("Original Array:");
         for (int i = 0; i < rawArray.length; i++) {
             System.out.print(" " + rawArray[i]);
         }
         System.out.println("");
+        */
 //
 //        MaxHeap heap = new MaxHeap(rawArray.length);
 //        // Heap heap = new Heap(rawArray.length);
@@ -68,6 +69,7 @@ public class Test {
 
 //        ReverseLinkedList r = new ReverseLinkedList();
 
+        AllSubsets as = new AllSubsets("abcde");
     }
 }
 
