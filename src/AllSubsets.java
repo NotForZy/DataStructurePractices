@@ -15,9 +15,11 @@ public class AllSubsets {
 
 
     public List<String> subSets(String set) {
+
         return null;
     }
 
+    // this is a test
     public void findSubSet(char[] array, int index, String[] solution) {
 
     }
