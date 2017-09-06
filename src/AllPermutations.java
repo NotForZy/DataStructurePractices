@@ -5,7 +5,8 @@ import java.util.List;
  * @author YubaiTao on 04/09/2017.
  * @project Test
  *
- *
+ * Time complexity: O(n!)
+ * Space complexity: O(n!)?
  *
  */
 public class AllPermutations {
@@ -13,7 +14,7 @@ public class AllPermutations {
         test(set);
     }
 
-    public List<String> permutations(String set) {
+    private List<String> permutations(String set) {
         List<String> result = new ArrayList<>();
         if (set == null) {
             return result;
@@ -44,7 +45,7 @@ public class AllPermutations {
             return;
         }
 
-        /*
+        /**
          * e.g:
          *     a bcde
          *       -(swap<a,b>)- b acde
@@ -59,7 +60,7 @@ public class AllPermutations {
         for (int i = index; i < array.length; i++) {
             swap(array, index, i);
             helper(array, index + 1, result);
-            // remember to swap back when back track to previous level.
+            // swap back when back track to previous level.
             swap(array, index, i);
         }
     }

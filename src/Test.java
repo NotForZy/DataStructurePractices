@@ -69,7 +69,10 @@ public class Test {
 
 //        ReverseLinkedList r = new ReverseLinkedList();
 
-        AllSubsets as = new AllSubsets("abcde");
+//        AllSubsets as = new AllSubsets("abcde");
+//        AllPermutations ap = new AllPermutations("abcd");
+
+
     }
 }
 
