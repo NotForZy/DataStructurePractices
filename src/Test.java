@@ -72,7 +72,9 @@ public class Test {
 //        AllSubsets as = new AllSubsets("abcde");
 //        AllPermutations ap = new AllPermutations("abcd");
 
-        SpacesRemoval sr  = new SpacesRemoval();
+//        SpacesRemoval sr  = new SpacesRemoval();
+
+
     }
 }
 
