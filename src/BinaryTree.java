@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * @author YubaiTao on 03/09/2017.
  * @project Test
@@ -21,6 +23,10 @@ public class BinaryTree {
         }
         return isBSTHelper(root.left, min, root.value)
                 && isBSTHelper(root.right, root.value, max);
+    }
+
+    public TreeNode testTreeConstrunction(int[] array) {
+        return null;
     }
 }
 
