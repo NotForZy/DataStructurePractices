@@ -17,7 +17,7 @@ public class Test {
             System.out.println(queue.poll());
         }
         */
-        int rawArray[] = {3, 2, 1, 7, 8, 4, 10, 16, 12};
+//        int rawArray[] = {3, 2, 1, 7, 8, 4, 10, 16, 12};
         // int rawArray[] = {3, 6};
 
         /*
@@ -74,7 +74,11 @@ public class Test {
 
 //        SpacesRemoval sr  = new SpacesRemoval();
 
-        BinarySearch bs = new BinarySearch();
+//        BinarySearch bs = new BinarySearch();
+//        AtoThePowerOfB a2b = new AtoThePowerOfB();
+//        FirstOccurrence fo = new FirstOccurrence();
+//        LastOccurrence lo = new LastOccurrence();
+        ClosestInSortedArray cisa = new ClosestInSortedArray();
     }
 }
 
