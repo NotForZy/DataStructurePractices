@@ -74,7 +74,7 @@ public class Test {
 
 //        SpacesRemoval sr  = new SpacesRemoval();
 
-
+        BinarySearch bs = new BinarySearch();
     }
 }
 
