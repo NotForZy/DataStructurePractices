@@ -19,9 +19,9 @@ public class ClosestInSortedArray {
             if (input[mid] == target) {
                 return mid;
             } else if (input[mid] < target) {
-                left = mid + 1;
+                left = mid;
             } else {
-                right = mid - 1;
+                right = mid;
             }
         }
         if (Math.abs(input[left] - target) < Math.abs(input[right] - target) ) {
@@ -33,7 +33,8 @@ public class ClosestInSortedArray {
 
     private void test() {
         int[] input = new int[] {1, 2, 3, 5, 6, 7, 8, 13};
-        int result = binarySearch(input, 2);
+        int[] input2 = new int[] {1, 3, 3, 3, 6, 9, 9, 12, 15};
+        int result = binarySearch(input2, 10);
 
         System.out.println("The closest one's index to the target is: " + result);
     }
