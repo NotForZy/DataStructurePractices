@@ -1,3 +1,5 @@
+import sun.java2d.cmm.kcms.KcmsServiceProvider;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -78,7 +80,8 @@ public class Test {
 //        AtoThePowerOfB a2b = new AtoThePowerOfB();
 //        FirstOccurrence fo = new FirstOccurrence();
 //        LastOccurrence lo = new LastOccurrence();
-        ClosestInSortedArray cisa = new ClosestInSortedArray();
+//        ClosestInSortedArray cisa = new ClosestInSortedArray();
+        KClosestInSortedArray kcisa = new KClosestInSortedArray();
     }
 }
 
