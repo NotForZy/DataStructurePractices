@@ -81,7 +81,9 @@ public class Test {
 //        FirstOccurrence fo = new FirstOccurrence();
 //        LastOccurrence lo = new LastOccurrence();
 //        ClosestInSortedArray cisa = new ClosestInSortedArray();
-        KClosestInSortedArray kcisa = new KClosestInSortedArray();
+//        KClosestInSortedArray kcisa = new KClosestInSortedArray();
+//        SearchInUnknownSizeSortedArray siussa = new SearchInUnknownSizeSortedArray();
+        SearchInSortedArray sisa = new SearchInSortedArray();
     }
 }
 

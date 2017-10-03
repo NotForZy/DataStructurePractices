@@ -52,8 +52,8 @@ public class KClosestInSortedArray {
             left = breakPoint - 1;
             right = breakPoint + 1;
         }
-        System.out.println("Left: " + left + "   Right: " + right);
-        System.out.println("Breaking Point:" + breakPoint);
+//        System.out.println("Left: " + left + "   Right: " + right);
+//        System.out.println("Breaking Point:" + breakPoint);
 
         while (count < k) {
             if (left < 0 || left == breakPoint) {
