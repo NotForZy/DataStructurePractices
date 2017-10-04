@@ -83,7 +83,8 @@ public class Test {
 //        ClosestInSortedArray cisa = new ClosestInSortedArray();
 //        KClosestInSortedArray kcisa = new KClosestInSortedArray();
 //        SearchInUnknownSizeSortedArray siussa = new SearchInUnknownSizeSortedArray();
-        SearchInSortedArray sisa = new SearchInSortedArray();
+//        SearchInSortedArray sisa = new SearchInSortedArray();
+        StackImplementation si = new StackImplementation();
     }
 }
 
