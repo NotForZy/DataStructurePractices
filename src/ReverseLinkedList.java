@@ -33,7 +33,15 @@ public class ReverseLinkedList {
 
     // Recursion method
     public ListNode reverseList_(ListNode head) {
+        /*
         if (head == null || head.next == null) {
+            return head;
+        }
+        */
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
             return head;
         }
         ListNode nextNode = head.next;
