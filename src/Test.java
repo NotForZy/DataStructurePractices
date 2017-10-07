@@ -1,7 +1,6 @@
-import sun.java2d.cmm.kcms.KcmsServiceProvider;
-
 import java.util.LinkedList;
 import java.util.Queue;
+import BinarySearch.*;
 
 /**
  * Created by YubaiTao on 16/08/2017.
@@ -40,27 +39,27 @@ public class Test {
 //            System.out.print(" " + heap.remove());
 //        }
 
-//        InsertSort sort = new InsertSort(rawArray, rawArray.length);
+//        Sort.InsertSort sort = new Sort.InsertSort(rawArray, rawArray.length);
 //        sort.display();
 
-//        SelectionSort sort = new SelectionSort(rawArray);
+//        Sort.SelectionSort sort = new Sort.SelectionSort(rawArray);
 //        sort.display();
 
-//        MergeSort sort = new MergeSort(rawArray);
+//        Sort.MergeSort sort = new Sort.MergeSort(rawArray);
 //        sort.display();
 
-//        QuickSort sort = new QuickSort(rawArray);
+//        Sort.QuickSort sort = new Sort.QuickSort(rawArray);
 //        sort.display();
 
-//        MergeSortPlus sort = new MergeSortPlus(rawArray);
+//        Sort.MergeSortPlus sort = new Sort.MergeSortPlus(rawArray);
 //        sort.display();
 
 //        int[] rainbowTest = {1, 0, 1, -1, 0};
-//        RainbowSort sort = new RainbowSort(rainbowTest);
+//        Sort.RainbowSort sort = new Sort.RainbowSort(rainbowTest);
 
-//        Fibonacci f = new Fibonacci(50);
+//        Recursion.Fibonacci f = new Recursion.Fibonacci(50);
 
-//        QueueBy2Stacks queue = new QueueBy2Stacks();
+//        Stack_Queue_LinkedList.QueueBy2Stacks queue = new Stack_Queue_LinkedList.QueueBy2Stacks();
 //        queue.offer(2);
 //        queue.offer(5);
 //        queue.peek();
@@ -69,22 +68,24 @@ public class Test {
 //        queue.peek();
 //        queue.poll();
 
-//        ReverseLinkedList r = new ReverseLinkedList();
+//        Stack_Queue_LinkedList.ReverseLinkedList r = new Stack_Queue_LinkedList.ReverseLinkedList();
 
 //        AllSubsets as = new AllSubsets("abcde");
 //        AllPermutations ap = new AllPermutations("abcd");
 
 //        SpacesRemoval sr  = new SpacesRemoval();
 
-//        BinarySearch bs = new BinarySearch();
-//        AtoThePowerOfB a2b = new AtoThePowerOfB();
-//        FirstOccurrence fo = new FirstOccurrence();
-//        LastOccurrence lo = new LastOccurrence();
-//        ClosestInSortedArray cisa = new ClosestInSortedArray();
-//        KClosestInSortedArray kcisa = new KClosestInSortedArray();
-//        SearchInUnknownSizeSortedArray siussa = new SearchInUnknownSizeSortedArray();
-//        SearchInSortedArray sisa = new SearchInSortedArray();
-//        StackImplementation si = new StackImplementation();
+//        BinarySearch.BinarySearch bs = new BinarySearch.BinarySearch();
+//        Recursion.AtoThePowerOfB a2b = new Recursion.AtoThePowerOfB();
+//        BinarySearch.BinarySearch.FirstOccurrence fo = new BinarySearch.BinarySearch.FirstOccurrence();
+//        BinarySearch.LastOccurrence lo = new BinarySearch.LastOccurrence();
+//        BinarySearch.BinarySearch.ClosestInSortedArray cisa = new BinarySearch.BinarySearch.ClosestInSortedArray();
+//        BinarySearch.KClosestInSortedArray kcisa = new BinarySearch.KClosestInSortedArray();
+//        BinarySearch.BinarySearch.SearchInUnknownSizeSortedArray siussa = new BinarySearch.BinarySearch.SearchInUnknownSizeSortedArray();
+          SearchInSortedArray sisa = new SearchInSortedArray();
+//        Stack_Queue_LinkedList.StackImplementation si = new Stack_Queue_LinkedList.StackImplementation();
+//        Stack_Queue_LinkedList.MergeTwoSortedLinkedLists mtsll = new Stack_Queue_LinkedList.MergeTwoSortedLinkedLists();
+
     }
 }
 

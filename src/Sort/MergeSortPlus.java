@@ -1,3 +1,5 @@
+package Sort;
+
 /**
  * @author YubaiTao on 01/09/2017.
  * @project Test
@@ -58,7 +60,7 @@ public class MergeSortPlus {
 
     public void display() {
         int[] solution = sort(array);
-        System.out.println("The Sorted Array(MergeSortPlus):");
+        System.out.println("The Sorted Array(Sort.MergeSortPlus):");
         for (int i = 0; i < size; i++) {
             System.out.print(" " + solution[i]);
         }

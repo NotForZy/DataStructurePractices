@@ -1,7 +1,14 @@
+package Stack_Queue_LinkedList;
+
+import Stack_Queue_LinkedList.ListNode;
+
 /**
  * project: Test
  *
  * @author YubaiTao on 07/10/2017.
+ *
+ *
+ * Insert a value in the sorted linked list.
  *
  * STANDARD ANSWER, NOT ORIGINAL
  *
@@ -33,8 +40,8 @@ public class InsertInSortedLinkedList {
 
         // original answer:
         /*
-        ListNode cur = head;
-        ListNode insertNode = new ListNode(value);
+        Stack_Queue_LinkedList.ListNode cur = head;
+        Stack_Queue_LinkedList.ListNode insertNode = new Stack_Queue_LinkedList.ListNode(value);
         if (head == null) {
             return insertNode;
         }

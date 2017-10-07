@@ -1,3 +1,5 @@
+package Stack_Queue_LinkedList;
+
 /**
  * @author YubaiTao on 03/09/2017.
  * @project Test
@@ -86,11 +88,14 @@ public class ReverseLinkedList {
     }
 }
 
+
+// node in list
 class ListNode {
-    int value;
-    ListNode next = null;
+    public int value;
+    public ListNode next;
 
     public ListNode(int value) {
         this.value = value;
+        next = null;
     }
 }
