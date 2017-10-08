@@ -23,6 +23,8 @@ public class ReverseLinkedList {
         ListNode next = null;
         ListNode curNode = head;
 
+        // do not care cur.next.next in the loop
+        // cur.next.next is implemented by "cur.next = prev" in the next loop
         while (curNode != null) {
             next = curNode.next;
             curNode.next = prev;

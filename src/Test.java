@@ -1,6 +1,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 import BinarySearch.*;
+import BinaryTree_BinarySearchTree.TreeTraversal;
 import Stack_Queue_LinkedList.*;
 
 /**
@@ -87,7 +88,9 @@ public class Test {
 //        Stack_Queue_LinkedList.StackImplementation si = new Stack_Queue_LinkedList.StackImplementation();
 //        MergeTwoSortedLinkedLists mtsll = new Stack_Queue_LinkedList.MergeTwoSortedLinkedLists();
 //        new MiddleNodeInLinkedList();
-        new ReorderLinkedList();
+//        new ReorderLinkedList();
+//        new PartitionLinkedList();
+        new TreeTraversal();
     }
 }
 
