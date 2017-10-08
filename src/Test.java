@@ -33,9 +33,9 @@ public class Test {
         System.out.println("");
         */
 //
-//        MaxHeap heap = new MaxHeap(rawArray.length);
-//        // Heap heap = new Heap(rawArray.length);
-//        System.out.println("Min/Max Heap:");
+//        BFS.MaxHeap heap = new BFS.MaxHeap(rawArray.length);
+//        // BFS.Heap heap = new BFS.Heap(rawArray.length);
+//        System.out.println("Min/Max BFS.Heap:");
 //        heap.createHeap(rawArray);
 //        heap.display();
 //        System.out.println("Remove Min/Max:");
@@ -74,10 +74,10 @@ public class Test {
 
 //        Stack_Queue_LinkedList.ReverseLinkedList r = new Stack_Queue_LinkedList.ReverseLinkedList();
 
-//        AllSubsets as = new AllSubsets("abcde");
-//        AllPermutations ap = new AllPermutations("abcd");
+//        DFS.AllSubsets as = new DFS.AllSubsets("abcde");
+//        DFS.AllPermutations ap = new DFS.AllPermutations("abcd");
 
-//        SpacesRemoval sr  = new SpacesRemoval();
+//        String.SpacesRemoval sr  = new String.SpacesRemoval();
 
 //        BinarySearch.BinarySearch bs = new BinarySearch.BinarySearch();
 //        Recursion.AtoThePowerOfB a2b = new Recursion.AtoThePowerOfB();

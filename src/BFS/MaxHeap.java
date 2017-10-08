@@ -1,3 +1,5 @@
+package BFS;
+
 /**
  * @author YubaiTao on 27/08/2017.
  * @project Test
@@ -20,7 +22,7 @@ public class MaxHeap {
     }
 
     public void display() {
-        // System.out.println("Max Heap:");
+        // System.out.println("Max BFS.Heap:");
         for (int i = 1; i < array.length; i++) {
             System.out.print(" " + array[i]);
         }
