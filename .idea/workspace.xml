@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="550ff09c-bca3-4dc6-b9ee-cf14e839da63" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BFS/KthSmallestInSortedMatrix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BFS/TraverseLayerByLayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BFS/TreeNode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Test/Test.class" afterPath="$PROJECT_DIR$/out/production/Test/Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BFS/KSmallestInUnsortedArray.java" afterPath="$PROJECT_DIR$/src/BFS/KSmallestInUnsortedArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BFS/Smallest_k.java" afterPath="$PROJECT_DIR$/src/BFS/Smallest_k.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test.java" afterPath="$PROJECT_DIR$/src/Test.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -430,7 +424,7 @@
       <workItem from="1507420210609" duration="7497000" />
       <workItem from="1507488483901" duration="10120000" />
       <workItem from="1508119790247" duration="996000" />
-      <workItem from="1508246947581" duration="11895000" />
+      <workItem from="1508246947581" duration="11920000" />
     </task>
     <task id="LOCAL-00001" summary="IDE Commit Test">
       <created>1504643052646</created>
@@ -586,11 +580,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507452371843</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update">
+      <created>1508338242051</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1508338242051</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175955000" />
+    <option name="totallyTimeSpent" value="175980000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
