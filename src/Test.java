@@ -3,7 +3,7 @@ import java.util.Queue;
 
 import BFS.*;
 import BinarySearch.*;
-import BinaryTree_BinarySearchTree.TreeTraversal;
+import BinaryTree_BinarySearchTree.*;
 import Stack_Queue_LinkedList.*;
 
 /**
@@ -93,7 +93,9 @@ public class Test {
 //        new ReorderLinkedList();
 //        new PartitionLinkedList();
 //        new TreeTraversal();
-        new KSmallestInUnsortedArray();
+//        new KSmallestInUnsortedArray();
+//        new TraverseLayerByLayer();
+        new KthSmallestInSortedMatrix();
     }
 }
 

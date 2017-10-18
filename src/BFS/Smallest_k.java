@@ -20,7 +20,7 @@ public class Smallest_k {
         PriorityQueue<Cell> minHeap = new PriorityQueue<Cell>(k, new Comparator<Cell>() {
             @Override
             public int compare(Cell o1, Cell o2) {
-                if (o1.value == o2.value) {
+                if (o1.value.equals(o2.value)) {
                     return 0;
                 }
                 return o1.value < o2.value ? -1 : 1;
@@ -53,14 +53,23 @@ public class Smallest_k {
     }
 }
 
-class Cell {
+class Cell {  // implements Comparable<Cell> {
     int row;
     int column;
-    int value;
+    Integer value;
 
-    Cell(int row, int column, int value) {
+    Cell(int row, int column, Integer value) {
         this.row = row;
         this.column = column;
         this.value = value;
     }
+
+//    @Override
+//    public int compareTo(Cell another) {
+//        if (this.value.equals(another.value)) {
+//            return 0;
+//        }
+//        return this.value < another.value ? -1 : 1;
+//    }
+
 }
