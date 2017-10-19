@@ -19,6 +19,7 @@ public class TraverseLayerByLayer {
         test();
     }
 
+    // Breadth First Search
     private List<List<Integer>> BFS(TreeNode root) {
         if (root == null) {
             return null;

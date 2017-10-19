@@ -95,7 +95,8 @@ public class Test {
 //        new TreeTraversal();
 //        new KSmallestInUnsortedArray();
 //        new TraverseLayerByLayer();
-        new KthSmallestInSortedMatrix();
+//        new KthSmallestInSortedMatrix();
+        new IfBinaryTreeIsCompleted();
     }
 }
 
