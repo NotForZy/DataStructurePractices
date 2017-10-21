@@ -7,6 +7,12 @@ import java.util.List;
  * project: Test
  *
  * @author YubaiTao on 20/10/2017.
+ *
+ *
+ *
+ * Enhanced version:
+ *    () [] {}  different type of parentheses.
+ *
  */
 public class AllValidPermutationsOfParentheses {
     public AllValidPermutationsOfParentheses() {

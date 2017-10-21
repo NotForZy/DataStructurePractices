@@ -6,6 +6,7 @@ import BinarySearch.*;
 import BinaryTree_BinarySearchTree.*;
 import DFS.AllSubsets;
 import DFS.AllValidPermutationsOfParentheses;
+import DFS.CombinationsOfCoins;
 import Stack_Queue_LinkedList.*;
 
 /**
@@ -100,7 +101,8 @@ public class Test {
 //        new KthSmallestInSortedMatrix();
 //        new IfBinaryTreeIsCompleted();
 //        new AllSubsets();
-        new AllValidPermutationsOfParentheses();
+//        new AllValidPermutationsOfParentheses();
+        new CombinationsOfCoins();
     }
 }
 
