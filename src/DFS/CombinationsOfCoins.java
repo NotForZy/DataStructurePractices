@@ -59,8 +59,13 @@ public class CombinationsOfCoins {
             if (target % coins[coins.length - 1] == 0) {
                 cur.add(target / coins[coins.length - 1]);
                 result.add(new ArrayList<Integer>(cur));
+                // cur is dynamic changed by helper function,
+                // its value can not be reset during iteration
+                // so removal is necessary
                 cur.remove(cur.size() - 1);
             }
+            // if coins is not perfectly fit to the target
+            // cut these branches and return without add new element to result
             return;
         }
         // for coins[index], we can pick 0, 1, 2, ..., target / coins[index] coins.
@@ -74,13 +79,15 @@ public class CombinationsOfCoins {
     }
 
     private void test() {
-        int[] coins = {2, 1};
-        int target = 4;
+        int[] coins = {3, 2, 1};
+        int target = 6;
         List<List<Integer>> result = combinations(target, coins);
         for (int i = 0; i < result.size(); i++) {
+            System.out.print("[");
             for (int j = 0; j < result.get(i).size(); j++) {
                 System.out.print(" " + result.get(i).get(j));
             }
+            System.out.print(" ]");
             System.out.println();
         }
     }

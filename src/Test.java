@@ -7,6 +7,7 @@ import BinaryTree_BinarySearchTree.*;
 import DFS.AllSubsets;
 import DFS.AllValidPermutationsOfParentheses;
 import DFS.CombinationsOfCoins;
+import HashTable.TopKFrequentWords;
 import Stack_Queue_LinkedList.*;
 
 /**
@@ -102,7 +103,8 @@ public class Test {
 //        new IfBinaryTreeIsCompleted();
 //        new AllSubsets();
 //        new AllValidPermutationsOfParentheses();
-        new CombinationsOfCoins();
+//        new CombinationsOfCoins();
+        new TopKFrequentWords();
     }
 }
 
