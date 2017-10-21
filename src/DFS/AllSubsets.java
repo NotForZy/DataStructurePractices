@@ -13,10 +13,16 @@ import java.util.List;
  * Assumption:
  *     There are no duplicate characters in the given string.
  *
+ *
+ *
+ * Time Complexity: O(2^n)
+ *     Total node in the recursion treed
+ * Space Complexity: O(n)
+ *     Height of the recursion tree
  */
 public class AllSubsets {
-    public AllSubsets(String set) {
-        test(set);
+    public AllSubsets() {
+        test();
     }
 
 
@@ -48,11 +54,14 @@ public class AllSubsets {
         sb.deleteCharAt(sb.length() - 1);
     }
 
-    private void test(String set) {
+    private void test() {
+        String set = "abcd";
         System.out.println("All subsets:");
         List<String> result = subSets(set);
         for (int i = 0; i < result.size(); i++) {
-            System.out.print(" " + result.get(i));
+            // actually there is an empty string
+            // this is made by skipping every char in the input
+            System.out.print("|" + result.get(i));
         }
     }
 

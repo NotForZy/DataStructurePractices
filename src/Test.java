@@ -4,6 +4,8 @@ import java.util.Queue;
 import BFS.*;
 import BinarySearch.*;
 import BinaryTree_BinarySearchTree.*;
+import DFS.AllSubsets;
+import DFS.AllValidPermutationsOfParentheses;
 import Stack_Queue_LinkedList.*;
 
 /**
@@ -96,7 +98,9 @@ public class Test {
 //        new KSmallestInUnsortedArray();
 //        new TraverseLayerByLayer();
 //        new KthSmallestInSortedMatrix();
-        new IfBinaryTreeIsCompleted();
+//        new IfBinaryTreeIsCompleted();
+//        new AllSubsets();
+        new AllValidPermutationsOfParentheses();
     }
 }
 
