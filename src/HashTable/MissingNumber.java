@@ -40,7 +40,7 @@ public class MissingNumber {
         return (int) (targetSum - actualSum);
     }
 
-    //Method 3: use XOR
+    // Method 3: use XOR
     // bit operation. - O(n)
     private int missingIII(int[] array) {
         int n = array.length + 1;
@@ -59,11 +59,40 @@ public class MissingNumber {
         return xor;
     }
 
+    // Method 4: swap to the original position. - O(n)
+    private int missingIV(int[] array) {
+        // try to swap the numbers to its corresponding position
+        // for the number x, the corresponding position is x - 1
+        for (int i = 0; i < array.length; i++) {
+            // while array[i] is not i + 1, swap array[i] to its
+            // correct position if possible
+            while (array[i] != i + 1 && array[i] != array.length + 1) {
+                swap(array, i, array[i] - 1);
+            }
+        }
+
+        // if the missing number is in range of 1 ~ n-1 are in position,
+        // the missing number is n
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != i + 1) {
+                return i + 1;
+            }
+        }
+        return array.length + 1;
+}
+
+    private void swap(int[] array, int a, int b){
+        int tmp = array[a];
+        array[a] = array[b];
+        array[b] = tmp;
+    }
+
     private void test() {
         int[] array = {2, 1, 4};
         int result = missingI(array);
         int result2 = missingII(array);
         int result3 = missingIII(array);
-        System.out.println("The missing number is : " + result + "; " + result2 + "; " + result3 + ";");
+        int result4 = missingIV(array);
+        System.out.println("The missing number is : " + result + "; " + result2 + "; " + result3 + "; " + result4 + ";");
     }
 }
