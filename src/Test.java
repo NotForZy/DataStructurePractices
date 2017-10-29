@@ -11,6 +11,7 @@ import DFS.CombinationsOfCoins;
 import DP.ArrayHopper;
 import DP.LongestAscendingSubArray;
 import DP.MaxProductOfCuttingRope;
+import HashTable.CommonNumbersOfTwoSortedArrays;
 import HashTable.MissingNumber;
 import HashTable.TopKFrequentWords;
 import Stack_Queue_LinkedList.*;
@@ -115,5 +116,6 @@ public class Test {
 //        new LongestAscendingSubArray();
 //        new MaxProductOfCuttingRope();
 //        new ArrayHopper();
+        new CommonNumbersOfTwoSortedArrays();
     }
 }
