@@ -12,8 +12,8 @@ import java.util.List;
  *
  */
 public class AllPermutations {
-    public AllPermutations(String set) {
-        test(set);
+    public AllPermutations() {
+        test();
     }
 
     private List<String> permutations(String set) {
@@ -73,8 +73,8 @@ public class AllPermutations {
         array[right] = tmp;
     }
 
-    public void test(String set) {
-        List<String> result = permutations(set);
+    public void test() {
+        List<String> result = permutations("abcde");
         System.out.println("All permutations:");
         for (int i = 0; i < result.size(); i++) {
             System.out.print(" " + result.get(i));

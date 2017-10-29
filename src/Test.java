@@ -4,9 +4,11 @@ import java.util.Queue;
 import BFS.*;
 import BinarySearch.*;
 import BinaryTree_BinarySearchTree.*;
+import DFS.AllPermutations;
 import DFS.AllSubsets;
 import DFS.AllValidPermutationsOfParentheses;
 import DFS.CombinationsOfCoins;
+import HashTable.MissingNumber;
 import HashTable.TopKFrequentWords;
 import Stack_Queue_LinkedList.*;
 
@@ -104,7 +106,9 @@ public class Test {
 //        new AllSubsets();
 //        new AllValidPermutationsOfParentheses();
 //        new CombinationsOfCoins();
-        new TopKFrequentWords();
+//        new TopKFrequentWords();
+//        new AllPermutations();
+        new MissingNumber();
     }
 }
 
