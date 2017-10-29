@@ -8,7 +8,9 @@ import DFS.AllPermutations;
 import DFS.AllSubsets;
 import DFS.AllValidPermutationsOfParentheses;
 import DFS.CombinationsOfCoins;
+import DP.ArrayHopper;
 import DP.LongestAscendingSubArray;
+import DP.MaxProductOfCuttingRope;
 import HashTable.MissingNumber;
 import HashTable.TopKFrequentWords;
 import Stack_Queue_LinkedList.*;
@@ -111,5 +113,7 @@ public class Test {
 //        new AllPermutations();
 //        new MissingNumber();
 //        new LongestAscendingSubArray();
+//        new MaxProductOfCuttingRope();
+//        new ArrayHopper();
     }
 }
