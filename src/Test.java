@@ -15,6 +15,7 @@ import HashTable.CommonNumbersOfTwoSortedArrays;
 import HashTable.MissingNumber;
 import HashTable.TopKFrequentWords;
 import Stack_Queue_LinkedList.*;
+import String.RepeatedRemoveAdjacentCharacters;
 
 /**
  * Created by YubaiTao on 16/08/2017.
@@ -116,6 +117,9 @@ public class Test {
 //        new LongestAscendingSubArray();
 //        new MaxProductOfCuttingRope();
 //        new ArrayHopper();
-        new CommonNumbersOfTwoSortedArrays();
+//        new CommonNumbersOfTwoSortedArrays();
+//        new RemoveAdjacentRepeatedCharacters();
+//        new RepeatedRemoveAdjacentCharacters();
+
     }
 }
