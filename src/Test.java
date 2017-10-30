@@ -16,6 +16,8 @@ import HashTable.MissingNumber;
 import HashTable.TopKFrequentWords;
 import Stack_Queue_LinkedList.*;
 import String.RepeatedRemoveAdjacentCharacters;
+import String.FindSubstring;
+import String.RemoveCertainCharacters;
 
 /**
  * Created by YubaiTao on 16/08/2017.
@@ -120,6 +122,7 @@ public class Test {
 //        new CommonNumbersOfTwoSortedArrays();
 //        new RemoveAdjacentRepeatedCharacters();
 //        new RepeatedRemoveAdjacentCharacters();
-
+//        new FindSubstring();
+//        new RemoveCertainCharacters();
     }
 }
