@@ -19,6 +19,7 @@ import String.RepeatedRemoveAdjacentCharacters;
 import String.FindSubstring;
 import String.RemoveCertainCharacters;
 import String.ReverseWordsInASentence;
+import String.StringReplacement;
 
 /**
  * Created by YubaiTao on 16/08/2017.
@@ -126,5 +127,6 @@ public class Test {
 //        new FindSubstring();
 //        new RemoveCertainCharacters();
 //        new ReverseWordsInASentence();
+        new StringReplacement();
     }
 }
