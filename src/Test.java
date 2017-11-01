@@ -9,6 +9,7 @@ import DFS.AllSubsets;
 import DFS.AllValidPermutationsOfParentheses;
 import DFS.CombinationsOfCoins;
 import DP.ArrayHopper;
+import DP.ArrayHopperMinJump;
 import DP.LongestAscendingSubArray;
 import DP.MaxProductOfCuttingRope;
 import HashTable.CommonNumbersOfTwoSortedArrays;
@@ -20,6 +21,7 @@ import String.FindSubstring;
 import String.RemoveCertainCharacters;
 import String.ReverseWordsInASentence;
 import String.StringReplacement;
+
 
 /**
  * Created by YubaiTao on 16/08/2017.
@@ -127,6 +129,7 @@ public class Test {
 //        new FindSubstring();
 //        new RemoveCertainCharacters();
 //        new ReverseWordsInASentence();
-        new StringReplacement();
+//        new StringReplacement();
+        new ArrayHopperMinJump();
     }
 }

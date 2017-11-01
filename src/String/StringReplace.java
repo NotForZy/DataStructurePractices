@@ -43,6 +43,16 @@ public class StringReplace {
         return counter;
     }
 
+    // NO NEED FOR DIRECTION FLAG!!
+    // Because there should be only one detect direction,
+    // which is form left to right.
+    // If we naively use the right to left matches,
+    // some cases can be ambiguous.
+    //     e.g. :   input="dododo" s="dod" t="fuck"
+    //              left -> right scan: fuckodo
+    //              right -> left scan: dofucko
+    // thus we use left to right scan, this result is discard.
+    // Correct result is at "StringReplacement"
     private boolean match(char[] array, String s, int index, boolean leftSideFlag) {
         if (leftSideFlag) {
             if (array.length + 1 - index < s.length()) {
