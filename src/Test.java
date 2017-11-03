@@ -8,10 +8,7 @@ import DFS.AllPermutations;
 import DFS.AllSubsets;
 import DFS.AllValidPermutationsOfParentheses;
 import DFS.CombinationsOfCoins;
-import DP.ArrayHopper;
-import DP.ArrayHopperMinJump;
-import DP.LongestAscendingSubArray;
-import DP.MaxProductOfCuttingRope;
+import DP.*;
 import HashTable.CommonNumbersOfTwoSortedArrays;
 import HashTable.MissingNumber;
 import HashTable.TopKFrequentWords;
@@ -130,6 +127,8 @@ public class Test {
 //        new RemoveCertainCharacters();
 //        new ReverseWordsInASentence();
 //        new StringReplacement();
-        new ArrayHopperMinJump();
+//        new ArrayHopperMinJump();
+//        new DictionaryWord();
+        new EditDistance();
     }
 }
