@@ -129,6 +129,10 @@ public class Test {
 //        new StringReplacement();
 //        new ArrayHopperMinJump();
 //        new DictionaryWord();
-        new EditDistance();
+//        new EditDistance();
+//        new LargestSquareOf1s();
+//        new LargestSubArraySum();
+//        new LongestConsecutive1s();
+        new LongestCrossOf1s();
     }
 }
