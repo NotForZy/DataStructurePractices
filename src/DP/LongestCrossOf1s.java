@@ -18,6 +18,14 @@ public class LongestCrossOf1s {
     }
 
     private int largest(int[][] matrix) {
+
+        if (matrix.length == 0) {
+            return 0;
+        }
+        if (matrix[0].length == 0) {
+            return 0;
+        }
+
         int[][] matrixLeft = new int[matrix.length][matrix[0].length];
         int[][] matrixRight = new int[matrix.length][matrix[0].length];
         int[][] matrixUp = new int[matrix.length][matrix[0].length];

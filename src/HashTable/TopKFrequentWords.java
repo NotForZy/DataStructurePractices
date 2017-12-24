@@ -23,6 +23,7 @@ public class TopKFrequentWords {
         // get all the distinct strings as keys and their frequencies as values.
         // NOTICE: the freqMap has at least size 1.
         Map<String, Integer> freqMap = getFreqMap(combo);
+        
         // minHeap on the frequencies of the strings
         // NOTICE: using Map.Entry as the element type directly so that
         //         all the operations are most efficient.
