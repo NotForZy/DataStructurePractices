@@ -132,6 +132,7 @@ public class Test {
 //        new LongestConsecutive1s();
 //        new LongestCrossOf1s();
 //        new KthElementInTwoSortedArrays();
-        new PermutationsWithSpaces();
+//        new PermutationsWithSpaces();
+        new CheckCousins();
     }
 }
