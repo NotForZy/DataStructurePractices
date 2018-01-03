@@ -4,10 +4,7 @@ import java.util.Queue;
 import BFS.*;
 import BinarySearch.*;
 import BinaryTree_BinarySearchTree.*;
-import DFS.AllPermutations;
-import DFS.AllSubsets;
-import DFS.AllValidPermutationsOfParentheses;
-import DFS.CombinationsOfCoins;
+import DFS.*;
 import DP.*;
 import HashTable.CommonNumbersOfTwoSortedArrays;
 import HashTable.MissingNumber;
@@ -135,6 +132,6 @@ public class Test {
 //        new LongestConsecutive1s();
 //        new LongestCrossOf1s();
 //        new KthElementInTwoSortedArrays();
-        System.out.println("This is a test!");
+        new PermutationsWithSpaces();
     }
 }
