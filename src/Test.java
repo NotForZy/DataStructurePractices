@@ -135,6 +135,6 @@ public class Test {
 //        new LongestConsecutive1s();
 //        new LongestCrossOf1s();
 //        new KthElementInTwoSortedArrays();
-
+        System.out.println("This is a test!");
     }
 }
