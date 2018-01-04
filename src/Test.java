@@ -133,6 +133,8 @@ public class Test {
 //        new LongestCrossOf1s();
 //        new KthElementInTwoSortedArrays();
 //        new PermutationsWithSpaces();
-        new CheckCousins();
+//        new CheckCousins();
+//        new SplitToSquareValue();
+//        new CircleStrings();
     }
 }

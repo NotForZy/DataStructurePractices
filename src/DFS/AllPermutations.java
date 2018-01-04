@@ -11,7 +11,7 @@ import java.util.List;
  * Space complexity: O(n!)?
  *
  */
-public class AllPermutations {
+public class  AllPermutations {
     public AllPermutations() {
         test();
     }
