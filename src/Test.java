@@ -1,6 +1,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
+import Array.Deduplication;
 import BFS.*;
 import BinarySearch.*;
 import BinaryTree_BinarySearchTree.*;
@@ -136,5 +137,11 @@ public class Test {
 //        new CheckCousins();
 //        new SplitToSquareValue();
 //        new CircleStrings();
+//        new ReverseLinkedList2();
+//        new ReverseLinkedListN();
+//        new Deduplication();
+//        new DeleteNodeBackward();
+//        new CheckLinkedListCircle();
+        new CheckPalindromeLinkedList();
     }
 }
