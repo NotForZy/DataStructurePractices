@@ -13,7 +13,7 @@ public class ReverseLinkedList {
     }
 
     // Iterative method
-    public ListNode reverseList(ListNode head) {
+    public static ListNode reverseList(ListNode head) {
         // base case
         if (head == null || head.next == null) {
             return head;
@@ -42,12 +42,14 @@ public class ReverseLinkedList {
             return head;
         }
         */
+        // Base case
         if (head == null) {
             return null;
         }
         if (head.next == null) {
             return head;
         }
+        // Recursion rule
         ListNode nextNode = head.next;
         ListNode newHead = reverseList_(head.next);
         nextNode.next = head;
