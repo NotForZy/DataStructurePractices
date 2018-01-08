@@ -1,4 +1,10 @@
 package Stack_Queue_LinkedList;
+/*
+ * Check whether a Linked List has a circle.
+ * Find the entrance of the circle.
+ *
+ *
+ */
 
 public class CheckLinkedListCircle {
 
