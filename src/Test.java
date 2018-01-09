@@ -142,6 +142,8 @@ public class Test {
 //        new Deduplication();
 //        new DeleteNodeBackward();
 //        new CheckLinkedListCircle();
-        new CheckPalindromeLinkedList();
+//        new CheckPalindromeLinkedList();
+//        new AddTwoLinkedList();
+//        new CheckLinkedListIntersection();
     }
 }
