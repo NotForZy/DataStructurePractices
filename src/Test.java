@@ -145,5 +145,7 @@ public class Test {
 //        new CheckPalindromeLinkedList();
 //        new AddTwoLinkedList();
 //        new CheckLinkedListIntersection();
+//        new RandomLinkedList();
+//        new FlattenLinkedList();
     }
 }
