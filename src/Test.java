@@ -139,7 +139,7 @@ public class Test {
 //        new CircleStrings();
 //        new ReverseLinkedList2();
 //        new ReverseLinkedListN();
-//        new Deduplication();
+        new Deduplication();
 //        new DeleteNodeBackward();
 //        new CheckLinkedListCircle();
 //        new CheckPalindromeLinkedList();
@@ -147,5 +147,8 @@ public class Test {
 //        new CheckLinkedListIntersection();
 //        new RandomLinkedList();
 //        new FlattenLinkedList();
+//        new IterativeTreeTraversal();
+//        new InvertBinaryTree();
+
     }
 }

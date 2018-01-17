@@ -7,6 +7,10 @@ package Sort;
  * {0} is sorted to {0}
  * {1, 0} is sorted to {0, 1}
  * {1, 0, 1, -1, 0} is sorted to {-1, 0, 0, 1, 1}
+ *
+ * Time complexity: O(n); total swap number
+ * Space complexity: O(3)
+ *
  */
 public class RainbowSort {
     public RainbowSort(int[] array) {

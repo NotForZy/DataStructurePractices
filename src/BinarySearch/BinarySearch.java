@@ -43,6 +43,25 @@ public class BinarySearch {
         return -1;
     }
 
+    // search the closest element < target
+    private int searchClosest(int[] input, int target) {
+        int left = 0;
+        int right = input.length - 1;
+        int res = -1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (input[mid] < target) {
+                res = mid; // max(res, mid);
+                left = mid - 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        return res;
+    }
+
     private void test() {
         int[] input = new int[] {1, 2, 4, 5, 6, 8, 12, 24, 27, 54, 67 };
         int[] input2 = new int[] {53};
