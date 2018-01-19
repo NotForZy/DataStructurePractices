@@ -1,5 +1,9 @@
 package Array;
 
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+
 public class Deduplication {
     public Deduplication() {
         test();
@@ -48,14 +52,145 @@ public class Deduplication {
         return slow + 1;
     }
 
+    // using a counter
+    private int deduplicate2_(int[] arr) {
+        if (arr == null) {
+            return -1;
+        }
+        if (arr.length <= 1) {
+            return arr.length;
+        }
+
+        int slow = 0;
+        int counter = 1;
+        for (int fast = 1; fast < arr.length; fast++) {
+            if (arr[fast] == arr[slow]) {
+                if (counter < 2) {
+                    arr[++slow] = arr[fast];
+                    counter++;
+                }
+            } else {
+                arr[++slow] = arr[fast];
+                counter = 1;
+            }
+        }
+
+        return slow + 1;
+    }
+
     // delete all consecutive duplicate elements
     private int deduplicateDelete(int[] arr) {
-        return 0;
+        int slow = 0;
+        int fast = 0;
+        int start;
+        while (fast < arr.length) {
+            start = fast;
+            while (fast < arr.length && arr[fast] == arr[start]) {
+                fast++;
+            }
+            if (fast - start == 1) {
+                arr[slow++] = arr[start];
+            }
+        }
+        return slow;
+    }
+
+    private int[] deduplication3(int[] arr) {
+        // Assumptions: array is not null
+        if (arr == null || arr.length <= 1) {
+            return arr;
+        }
+        int end = 0;
+        // use flag to see if there is any duplicates of array[end].
+        boolean flag = false;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] == arr[end]) {
+                // if there is a duplicate, set flag and do nothing
+                flag = true;
+            } else if (flag == true) {
+                // if array[i] != array[end], and flag is set,
+                // array[end] should not be included in the valid subarray,
+                // and we can just replace it with array[i] since next
+                // we are going to check if there is any duplicate of array[i].
+                arr[end] = arr[i];
+                // reset flag to false since we are processing another element
+                flag = false;
+            } else {
+                // if arr[i] != arr[end] and flag is not set
+                // it means there is no duplicate of arr[end] and it should be
+                // included in the valid sub-array.
+                arr[++end] = arr[i];
+            }
+        }
+        // do not forget that we need to check if there is any duplicates for
+        // the last arr[end]
+        return Arrays.copyOf(arr, flag?end:end+1);
+    }
+
+    private int[] deduplication4(int[] array) {
+        Deque<Integer> stack = new ArrayDeque<>();
+        boolean flag = false;
+        for (int i = 0; i < array.length; i++) {
+            if (stack.isEmpty() || stack.peekFirst() != array[i] ) {
+                if (flag == true) {
+                    stack.pollFirst();
+                    flag = false;
+                }
+                stack.offerFirst(array[i]);
+                continue;
+            }
+            if (stack.peekFirst() == array[i]) {
+                flag = true;
+            }
+        }
+        int[] result = new int[stack.size()];
+        for (int i = 0; i < stack.size(); i++) {
+            result[i] = stack.pollLast();
+        }
+        return result;
+    }
+
+    private int[] deduplication4_(int[] array) {
+        // Assumptions: array is not null.
+        int end = -1;
+        for (int i = 0; i < array.length; i++) {
+            // we are using the left part of the original arrays as a stack.
+            // and the top element's index is end . If the stack is empty(end == -1),
+            // we just push the element into the stack, or if the element is not
+            // the same as the top element of the stack, we can push the element into
+            // the stack as well.
+            if (end == -1 || array[end] != array[i]) {
+                array[++end] = array[i];
+            } else {
+                // otherwise, we ignore all consecutive duplicates and
+                // remove the top element of the stack
+                while (i + 1 < array.length && array[i + 1] == array[end]) {
+                    i++;
+                }
+                end--;
+            }
+        }
+        return Arrays.copyOf(array, end + 1);
     }
 
     private void test() {
         int[] arr = {1, 2, 2, 3, 3, 3, 5, 5, 5, 5, 6};
         System.out.println("The deduplicate number of array is: " +
                 + deduplicate(arr) + " " + deduplicate2(arr));
+
+        int[] arr3 = {1, 2, 2, 3, 3, 3, 5, 5, 5, 5, 6};
+        int[] result3 = deduplication3(arr3);
+        printArr(result3);
+
+        int[] arr4 = {1, 2, 2, 3, 3, 3, 5, 5, 5, 5, 6};
+        int[] result4 = deduplication4(arr4);
+        printArr(result4);
+    }
+
+    private void printArr(int[] arr){
+        System.out.println();
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
     }
 }
