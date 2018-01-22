@@ -95,6 +95,7 @@ public class Deduplication {
         return slow;
     }
 
+
     private int[] deduplication3(int[] arr) {
         // Assumptions: array is not null
         if (arr == null || arr.length <= 1) {
@@ -127,26 +128,36 @@ public class Deduplication {
         return Arrays.copyOf(arr, flag?end:end+1);
     }
 
+
+    // Use a explicit stack to save the elements.
+    // If there are duplicates, pop up.
     private int[] deduplication4(int[] array) {
         Deque<Integer> stack = new ArrayDeque<>();
         boolean flag = false;
         for (int i = 0; i < array.length; i++) {
-            if (stack.isEmpty() || stack.peekFirst() != array[i] ) {
-                if (flag == true) {
-                    stack.pollFirst();
-                    flag = false;
-                }
+            if (stack.isEmpty()) {
                 stack.offerFirst(array[i]);
                 continue;
             }
             if (stack.peekFirst() == array[i]) {
                 flag = true;
+            } else {
+                if (flag == true) {
+                    stack.pollFirst();
+                    flag = false;
+                }
+                stack.offerFirst(array[i]);
             }
         }
         int[] result = new int[stack.size()];
-        for (int i = 0; i < stack.size(); i++) {
+        int i = 0;
+        while (!stack.isEmpty()) {
             result[i] = stack.pollLast();
+            i++;
         }
+//        for (int i = 0; i < stack.size(); i++) {
+//            result[i] = stack.pollLast();
+//        }
         return result;
     }
 
@@ -154,7 +165,7 @@ public class Deduplication {
         // Assumptions: array is not null.
         int end = -1;
         for (int i = 0; i < array.length; i++) {
-            // we are using the left part of the original arrays as a stack.
+            // using the left part of the original arrays as a stack.
             // and the top element's index is end . If the stack is empty(end == -1),
             // we just push the element into the stack, or if the element is not
             // the same as the top element of the stack, we can push the element into
@@ -174,17 +185,23 @@ public class Deduplication {
     }
 
     private void test() {
-        int[] arr = {1, 2, 2, 3, 3, 3, 5, 5, 5, 5, 6};
+        int[] arr = {1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 5, 6};
         System.out.println("The deduplicate number of array is: " +
                 + deduplicate(arr) + " " + deduplicate2(arr));
 
-        int[] arr3 = {1, 2, 2, 3, 3, 3, 5, 5, 5, 5, 6};
+        int[] arr3 = {1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 5, 6};
         int[] result3 = deduplication3(arr3);
         printArr(result3);
 
-        int[] arr4 = {1, 2, 2, 3, 3, 3, 5, 5, 5, 5, 6};
+        int[] arr4 = {1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 5, 6};
         int[] result4 = deduplication4(arr4);
         printArr(result4);
+
+        int[] arr5 = {1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 5, 4, 6};
+        int[] result5 = deduplication4_(arr5);
+        printArr(result5);
+
+
     }
 
     private void printArr(int[] arr){
