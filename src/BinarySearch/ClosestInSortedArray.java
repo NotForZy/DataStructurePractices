@@ -21,7 +21,8 @@ public class ClosestInSortedArray {
             if (input[mid] == target) {
                 return mid;
             } else if (input[mid] < target) {
-                left = mid;
+                left = mid; // left = mid + 1; WRONG
+                            // because the left can be the final result ( closest one)
             } else {
                 right = mid;
             }

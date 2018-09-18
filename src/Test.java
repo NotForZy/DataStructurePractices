@@ -1,28 +1,14 @@
-import java.util.LinkedList;
-import java.util.Queue;
-
-import Array.Deduplication;
-import BFS.*;
-import BinarySearch.*;
-import BinaryTree_BinarySearchTree.*;
-import DFS.*;
-import DP.*;
-import HashTable.CommonNumbersOfTwoSortedArrays;
-import HashTable.MissingNumber;
-import HashTable.TopKFrequentWords;
 import Stack_Queue_LinkedList.*;
-import String.RepeatedRemoveAdjacentCharacters;
-import String.FindSubstring;
-import String.RemoveCertainCharacters;
-import String.ReverseWordsInASentence;
-import String.StringReplacement;
 
 
 /**
  * Created by YubaiTao on 16/08/2017.
  */
+
+
 public class Test {
     public static void main(String[] args) {
+
         // System.out.println("This is a simple test");
         /*
         Queue<Integer> queue = new LinkedList<Integer>();
@@ -139,7 +125,7 @@ public class Test {
 //        new CircleStrings();
 //        new ReverseLinkedList2();
 //        new ReverseLinkedListN();
-        new Deduplication();
+//        new Deduplication();
 //        new DeleteNodeBackward();
 //        new CheckLinkedListCircle();
 //        new CheckPalindromeLinkedList();
@@ -149,6 +135,6 @@ public class Test {
 //        new FlattenLinkedList();
 //        new IterativeTreeTraversal();
 //        new InvertBinaryTree();
-
+        new InterestingCoin();
     }
 }

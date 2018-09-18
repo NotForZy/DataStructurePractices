@@ -22,11 +22,11 @@ public class FirstOccurrence {
         while (left < right - 1) {
             mid  = left + (right - left)/2;
             if (input[mid] == target) {
-                right = mid;
+                right = mid; // mid - 1 WRONG
             } else if (input[mid] < target){
-                left = mid + 1;
+                left = mid + 1; // left = mid RIGHT
             } else {
-                right = mid - 1;
+                right = mid - 1; // right = mid RIGHT
             }
         }
         if (input[left] == target) {

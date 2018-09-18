@@ -1,8 +1,7 @@
 package Array;
 
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Deque;
+import java.io.PrintWriter;
+import java.util.*;
 
 public class Deduplication {
     public Deduplication() {
@@ -200,6 +199,9 @@ public class Deduplication {
         int[] arr5 = {1, 2, 2, 3, 3, 3, 4, 5, 5, 5, 5, 4, 6};
         int[] result5 = deduplication4_(arr5);
         printArr(result5);
+
+
+        
 
 
     }
