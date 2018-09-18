@@ -34,7 +34,7 @@ public class BinarySearch {
             if (input[mid] == target) {
                 return mid;
             } else if (input[mid] < target) {
-                left = mid + 1;
+                left = mid + 1; // left = middle (wrong)
             } else {
                 right = mid - 1;
             }
